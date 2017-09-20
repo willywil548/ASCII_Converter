@@ -1,0 +1,16 @@
+﻿<Window x:Class="WPF_Group_Project.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WPF_Group_Project"
+        mc:Ignorable="d"
+        Title="ASCII Converter" Height="350" Width="525">
+    <Grid Background="Wheat">
+        <TextBox x:Name="txtUserInput" Margin="10,45,0,34.667" TextWrapping="Wrap" Text="Input Data Here" KeyUp="txtUserInput_KeyUP" HorizontalAlignment="Left" Width="234"/>
+        <Label Content="INPUT" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Width="234" Height="30" HorizontalContentAlignment="Center"/>
+        <Label Content="OUTPUT" Margin="275,10,9.667,0" VerticalAlignment="Top" Height="30" HorizontalContentAlignment="Center"/>
+        <TextBox IsReadOnly="True" x:Name="txtBlockUserOutPut" Margin="275,45,9.667,34.667" TextWrapping="Wrap" Text="" Cursor="IBeam" Focusable="True" />
+        <Button x:Name="btnReset" Content="Reset" Click="btnReset_Click" HorizontalAlignment="Center" Width="120" Height="20" VerticalAlignment="Bottom"/>
+    </Grid>
+</Window>
